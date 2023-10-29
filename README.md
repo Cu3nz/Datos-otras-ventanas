@@ -37,7 +37,4 @@ El proyecto está compuesto por:
 - Las cookies establecidas por este proyecto tienen una duración de 1 hora.
 - Asegúrese de permitir cookies en su navegador para que esta aplicación funcione correctamente.
 
-## Contribuciones
-
-Si desea contribuir a este proyecto o tiene alguna sugerencia, no dude en hacer un fork o abrir un issue.
 
