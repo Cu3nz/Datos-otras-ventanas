@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center><h2>Voy a mostrar los datos que has introducido en  los inputs del formulario.html</h2></center>
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+
+            let mostrar = opener.devolver();
+
+            document.getElementById("nombre").textContent = "Nombre = " + mostrar.nombre;
+            document.getElementById("Apellidos").textContent = "Apellidos = " + mostrar.apellidos;
+            document.getElementById("Ciudad").textContent = "Ciudad = " + mostrar.ciudad;
+            document.getElementById("DNI").textContent = "DNI = " + mostrar.dni;
+            document.getElementById("Telefono").textContent = "Telefono = " + mostrar.telefono;
+            
+
+         });
+    </script>
+
+    <p id="nombre"></p>
+    <p><span id="Apellidos"></span></p>
+    <p><span id="Ciudad"></span></p>
+    <p><span id="DNI"></span></p>
+    <p><span id="Telefono"></span></p>
+    
+</body>
+</html>

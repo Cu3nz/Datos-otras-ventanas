@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar datos cookies</title>
+</head>
+<body>
+    <center><h2>Voy a mostrar los valores que almacena las cookies mediante lo que has escrito en los inputs de formulario.html</h2></center>
+
+
+    <script>
+          document.addEventListener("DOMContentLoaded", function () {
+
+let mostrar = opener.devolverCookie();
+
+document.getElementById("nombre").textContent = "Nombre = " + mostrar.nombre;
+document.getElementById("Apellidos").textContent = "Apellidos = " + mostrar.apellidos;
+document.getElementById("Ciudad").textContent = "Ciudad = " + mostrar.ciudad;
+document.getElementById("DNI").textContent = "DNI = " + mostrar.dni;
+document.getElementById("Telefono").textContent = "Telefono = " + mostrar.telefono;
+
+
+});
+    </script>
+
+
+
+    <p id="nombre"></p>
+    <p><span id="Apellidos"></span></p>
+    <p><span id="Ciudad"></span></p>
+    <p><span id="DNI"></span></p>
+    <p><span id="Telefono"></span></p>
+</body>
+</html>
